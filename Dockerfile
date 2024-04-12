@@ -172,5 +172,4 @@ VOLUME /var/www/html
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/
 COPY docker-entrypoint.sh /usr/local/bin/
 
-ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
